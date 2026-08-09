@@ -1,0 +1,106 @@
+@keyframes terminalAppear{
+
+  from{
+
+    opacity:0;
+
+    transform:
+      translateY(12px)
+      scale(.985);
+  }
+
+  to{
+
+    opacity:1;
+
+    transform:none;
+  }
+}
+
+
+@keyframes terminalContentAppear{
+
+  from{
+
+    opacity:0;
+
+    transform:translateY(5px);
+  }
+
+  to{
+
+    opacity:1;
+
+    transform:none;
+  }
+}
+
+
+@keyframes heroTextAppear{
+
+  from{
+
+    opacity:0;
+
+    transform:translateY(10px);
+  }
+
+  to{
+
+    opacity:1;
+
+    transform:none;
+  }
+}
+
+
+@keyframes outputAppear{
+
+  from{
+    opacity:0;
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+
+@keyframes blink{
+
+  50%{
+    opacity:0;
+  }
+}
+
+
+@keyframes overlayAppear{
+
+  from{
+    opacity:0;
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+
+@keyframes pop{
+
+  from{
+
+    opacity:0;
+
+    transform:
+      translateY(12px)
+      scale(.975);
+  }
+
+  to{
+
+    opacity:1;
+
+    transform:none;
+  }
+}

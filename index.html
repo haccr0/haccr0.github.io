@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta
+  name="viewport"
+  content="width=device-width,initial-scale=1"
+>
+
+<title>.</title>
+
+<link
+  rel="icon"
+  type="image/png"
+  href="assets/favicon.png"
+>
+
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/terminal.css">
+<link rel="stylesheet" href="css/modal.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+
+<div class="page">
+
+<nav>
+
+<div class="logo">
+  <a href="/" aria-label="Reload website">
+    <img
+      src="assets/favicon.png"
+      alt="Site Logo"
+      width="32"
+      height="32"
+    >
+  </a>
+</div>
+
+
+  <div class="navlinks">
+
+    <button
+      type="button"
+      data-nav="about"
+    >
+      About
+    </button>
+
+    <button
+      type="button"
+      data-nav="profiles"
+    >
+      Profiles
+    </button>
+
+    <button
+      type="button"
+      data-nav="connect"
+    >
+      Connect
+    </button>
+
+  </div>
+
+</nav>
+
+
+<main class="hero">
+
+<div class="terminal-wrap">
+
+<section
+  class="terminal"
+  id="terminal"
+>
+
+<div class="titlebar">
+
+  <div class="traffic-lights">
+
+    <button
+      type="button"
+      class="traffic red"
+      title="Close"
+      onclick="closeTerminal()"
+    >
+      <span>×</span>
+    </button>
+
+    <button
+      type="button"
+      class="traffic yellow"
+      title="Minimize"
+      onclick="minimizeTerminal()"
+    >
+      <span>−</span>
+    </button>
+
+    <button
+      type="button"
+      class="traffic green"
+      title="Zoom"
+      onclick="maximizeTerminal()"
+    >
+      <span>↗</span>
+    </button>
+
+  </div>
+
+
+  <span class="terminal-title">
+    shon — zsh — 80×24
+  </span>
+
+</div>
+
+
+<div class="terminal-body">
+
+<div class="boot">
+
+<span class="ok">
+portfolio loaded ✓
+</span>
+
+<br>
+
+<span class="ok">
+identity loaded ✓
+</span>
+
+</div>
+
+
+<div class="prompt">
+shon@portfolio ~ % whoami
+</div>
+
+
+<div class="name">
+
+<span>$H0N</span>
+
+<span>$ANTH0$H</span>
+
+</div>
+
+
+<div class="tagline">
+
+𝗖𝗼𝗺𝗽𝘂𝘁𝗲𝗿 𝗦𝗰𝗶𝗲𝗻𝗰𝗲 𝘀𝘁𝘂𝗱𝗲𝗻𝘁 · 𝗯𝘂𝗶𝗹𝗱𝗲𝗿 · 𝗲𝘅𝗽𝗹𝗼𝗿𝗶𝗻𝗴 𝗔𝗜.<br>
+𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴, 𝗯𝗿𝗲𝗮𝗸𝗶𝗻𝗴, 𝗮𝗻𝗱 𝗰𝗿𝗲𝗮𝘁𝗶𝗻𝗴 𝘀𝗼𝗺𝗲𝘁𝗵𝗶𝗻𝗴 𝗯𝗲𝘁𝘁𝗲𝗿 𝗲𝘃𝗲𝗿𝘆 𝗱𝗮𝘆.<br>
+
+</div>
+
+
+<div class="command-line"></div>
+
+
+<div class="terminal-input">
+
+<span class="prompt">
+shon@portfolio ~ %
+</span>
+
+<input
+  id="commandInput"
+  autocomplete="off"
+  spellcheck="false"
+  aria-label="Terminal command"
+>
+
+<span class="cursor"></span>
+
+</div>
+
+
+<div class="help">
+
+Type <b>help</b> to see available commands.
+
+</div>
+
+</div>
+
+
+<div
+  class="command-output"
+  id="commandOutput"
+>
+
+<div class="output-head">
+
+<span
+  class="output-title"
+  id="outputPrompt"
+>
+shon@portfolio ~ %
+</span>
+
+<button
+  class="output-close"
+  type="button"
+  onclick="closeOutput()"
+>
+close ×
+</button>
+
+</div>
+
+
+<div
+  class="output-content"
+  id="outputContent"
+></div>
+
+</div>
+
+</section>
+
+</div>
+
+</main>
+
+</div>
+
+
+<div
+  class="overlay"
+  id="overlay"
+>
+
+<div
+  class="modal"
+  id="modal"
+>
+
+<div class="modalbar">
+
+<div class="traffic-lights always-visible">
+
+<button
+  type="button"
+  class="traffic red"
+  title="Close"
+  onclick="closeModal()"
+>
+<span>×</span>
+</button>
+
+<button
+  type="button"
+  class="traffic yellow"
+  title="Minimize"
+  onclick="minimizeModal()"
+>
+<span>−</span>
+</button>
+
+<button
+  type="button"
+  class="traffic green"
+  title="Zoom"
+  onclick="maximizeModal()"
+>
+<span>↗</span>
+</button>
+
+</div>
+
+
+<strong id="modalTitle">
+about
+</strong>
+
+</div>
+
+
+<div
+  class="modalbody"
+  id="modalBody"
+></div>
+
+</div>
+
+</div>
+
+
+<button
+  id="restoreTerminal"
+  type="button"
+  onclick="restoreTerminal()"
+>
+
+<span class="restore-icon">
+⌘
+</span>
+
+<span>
+Terminal
+</span>
+
+</button>
+
+
+<button
+  id="restoreSection"
+  type="button"
+  onclick="restoreModal()"
+>
+
+↗
+
+<span id="restoreSectionName">
+Section
+</span>
+
+</button>
+
+
+<script src="js/data.js"></script>
+<script src="js/terminal.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,673 @@
+/* =========================
+   DATA
+========================= */
+
+.data-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:1px;
+
+  background:var(--line);
+
+  border:1px solid var(--line);
+
+  margin-top:28px;
+
+  border-radius:8px;
+
+  overflow:hidden;
+}
+
+
+.data-grid div{
+
+  padding:18px;
+
+  background:
+    rgba(16,23,17,.92);
+}
+
+
+.data-grid small{
+
+  display:block;
+
+  color:#626e65;
+
+  font:
+
+    10px
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+
+  margin-bottom:7px;
+}
+
+
+.data-grid span{
+  font-size:14px;
+}
+
+
+/* =========================
+   ABOUT PHOTO
+========================= */
+
+.about-photo{
+
+  width:170px;
+
+  height:210px;
+
+  float:right;
+
+  margin:0 0 24px 35px;
+
+  border:1px solid #303b33;
+
+  border-radius:12px;
+
+  background:
+
+    radial-gradient(
+      circle at 50% 35%,
+      #34463a,
+      #101610 68%
+    );
+
+  display:grid;
+
+  place-items:center;
+
+  overflow:hidden;
+
+  color:#657067;
+
+  font:
+
+    11px
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+
+  text-align:center;
+
+  box-shadow:
+
+    0 12px 35px rgba(0,0,0,.25),
+    inset 0 1px 0 rgba(255,255,255,.025);
+}
+
+
+.about-photo img{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+  display:block;
+}
+
+
+/* =========================
+   WHOAMI
+========================= */
+
+.whoami-grid{
+
+  display:grid;
+
+  grid-template-columns:190px 1fr;
+
+  gap:38px;
+
+  align-items:center;
+}
+
+
+.whoami-photo{
+
+  width:190px;
+
+  height:230px;
+
+  border:1px solid #303b33;
+
+  border-radius:12px;
+
+  background:
+
+    radial-gradient(
+      circle at 50% 35%,
+      #34463a,
+      #101610 68%
+    );
+
+  display:grid;
+
+  place-items:center;
+
+  color:#657067;
+
+  font:
+
+    11px
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+
+  text-align:center;
+
+  overflow:hidden;
+
+  box-shadow:
+
+    0 12px 35px rgba(0,0,0,.25),
+    inset 0 1px 0 rgba(255,255,255,.025);
+}
+
+
+.whoami-photo img{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+}
+
+
+.identity-lines{
+
+  border-top:1px solid var(--line);
+
+  margin-top:25px;
+}
+
+
+.identity-lines div{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  gap:20px;
+
+  padding:13px 0;
+
+  border-bottom:1px solid var(--line);
+}
+
+
+.identity-lines small,
+.identity-lines strong{
+
+  font:
+
+    11px
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+}
+
+
+.identity-lines small{
+  color:#69736c;
+}
+
+
+.identity-lines strong{
+
+  color:#dfe5e0;
+
+  font-weight:500;
+
+  text-align:right;
+}
+
+
+/* =========================
+   PROFILES
+========================= */
+
+.profile-list{
+
+  margin-top:28px;
+
+  border-top:1px solid var(--line);
+}
+
+
+.profile-list a{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  padding:18px 0;
+
+  border-bottom:1px solid var(--line);
+
+  color:var(--text);
+
+  text-decoration:none;
+}
+
+
+.profile-list a:hover{
+
+  color:var(--green2);
+
+  transform:translateX(4px);
+}
+
+
+/* =========================
+   CONNECT
+========================= */
+
+.contact-email{
+
+  display:inline-block;
+
+  margin-top:20px;
+
+  color:var(--green2);
+
+  font-size:clamp(18px,3vw,30px);
+
+  text-decoration:none;
+
+  border-bottom:1px solid #38533f;
+
+  padding-bottom:5px;
+}
+
+
+.contact-email:hover{
+  border-color:var(--green2);
+}
+
+
+/* =========================
+   RESTORE TERMINAL
+========================= */
+
+#restoreTerminal{
+
+  position:fixed;
+
+  left:50%;
+
+  bottom:22px;
+
+  transform:translateX(-50%);
+
+  z-index:700;
+
+  display:none;
+
+  align-items:center;
+
+  gap:8px;
+
+  border:1px solid #39483e;
+
+  border-radius:12px;
+
+  padding:9px 14px;
+
+  background:rgba(18,25,20,.94);
+
+  color:#dce4de;
+
+  box-shadow:
+
+    0 12px 35px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.025);
+
+  backdrop-filter:blur(18px);
+
+  -webkit-backdrop-filter:blur(18px);
+
+  cursor:pointer;
+}
+
+
+#restoreTerminal:hover{
+
+  border-color:#4d9f61;
+
+  color:var(--green2);
+
+  transform:
+    translateX(-50%)
+    translateY(-1px);
+}
+
+
+.restore-icon{
+
+  font-family:ui-monospace,monospace;
+
+  color:var(--green);
+}
+
+
+/* =========================
+   SYSTEM
+========================= */
+
+.system{
+
+  position:fixed;
+
+  right:22px;
+
+  bottom:22px;
+
+  z-index:55;
+
+  color:#606961;
+
+  font:
+
+    10px
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+
+  text-align:right;
+
+  line-height:1.6;
+}
+
+
+.system strong{
+
+  color:var(--green);
+
+  font-weight:500;
+}
+
+
+/* =========================
+   MODAL OVERLAY
+========================= */
+
+.overlay{
+
+  position:fixed;
+
+  inset:0;
+
+  background:rgba(0,0,0,.55);
+
+  backdrop-filter:blur(9px);
+
+  -webkit-backdrop-filter:blur(9px);
+
+  display:none;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:20px;
+
+  z-index:1000;
+}
+
+
+.overlay.show{
+
+  display:flex;
+
+  animation:
+    overlayAppear .2s ease both;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal{
+
+  position:relative;
+
+  width:min(700px,100%);
+
+  max-height:80vh;
+
+  overflow:auto;
+
+  background:
+
+    linear-gradient(
+      145deg,
+      rgba(20,29,23,.97),
+      rgba(9,14,11,.98)
+    );
+
+  border:1px solid rgba(92,120,102,.34);
+
+  border-radius:15px;
+
+  box-shadow:
+
+    0 35px 100px rgba(0,0,0,.7),
+    0 15px 40px rgba(0,0,0,.32),
+    0 0 0 1px rgba(103,245,162,.025),
+    inset 0 1px 0 rgba(255,255,255,.025);
+
+  backdrop-filter:blur(28px);
+
+  -webkit-backdrop-filter:blur(28px);
+
+  animation:
+    pop .24s cubic-bezier(.2,.8,.2,1);
+}
+
+
+.modalbar{
+
+  height:48px;
+
+  display:flex;
+
+  align-items:center;
+
+  padding:0 16px;
+
+  border-bottom:1px solid var(--line);
+
+  position:sticky;
+
+  top:0;
+
+  background:
+
+    linear-gradient(
+      180deg,
+      rgba(30,37,32,.96),
+      rgba(21,28,24,.94)
+    );
+
+  z-index:2;
+
+  box-shadow:
+
+    inset 0 1px 0 rgba(255,255,255,.025);
+}
+
+
+.modalbar .traffic-lights{
+
+  opacity:1;
+
+  transform:none;
+}
+
+
+.modalbar strong{
+
+  position:absolute;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  font:
+
+    12px
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+
+  color:#89948d;
+}
+
+
+.modalbody{
+
+  padding:38px;
+}
+
+
+.modalbody h2{
+
+  font-size:55px;
+
+  letter-spacing:-.07em;
+
+  margin:8px 0 20px;
+}
+
+
+.modalbody p{
+
+  color:var(--muted);
+
+  line-height:1.75;
+}
+
+
+/* =========================
+   MODAL STATES
+========================= */
+
+.modal.window-minimized{
+  display:none;
+}
+
+
+.modal.window-maximized{
+
+  position:fixed;
+
+  inset:20px;
+
+  width:auto;
+
+  height:calc(100vh - 40px);
+
+  max-height:none;
+
+  z-index:1100;
+}
+
+
+.modal.window-maximized .modalbody{
+
+  max-height:calc(100vh - 88px);
+
+  overflow:auto;
+}
+
+
+/* =========================
+   SECTION RESTORE
+========================= */
+
+#restoreSection{
+
+  position:fixed;
+
+  right:24px;
+
+  bottom:24px;
+
+  z-index:1200;
+
+  display:none;
+
+  align-items:center;
+
+  gap:8px;
+
+  border:1px solid #39483e;
+
+  border-radius:12px;
+
+  padding:9px 14px;
+
+  background:rgba(18,25,20,.94);
+
+  color:#dce4de;
+
+  box-shadow:
+
+    0 12px 35px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.025);
+
+  backdrop-filter:blur(18px);
+
+  -webkit-backdrop-filter:blur(18px);
+
+  cursor:pointer;
+}
+
+
+#restoreSection:hover{
+
+  border-color:#4d9f61;
+
+  color:var(--green2);
+
+  transform:translateY(-1px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+  padding:30px 0 45px;
+
+  color:#575e59;
+
+  font:
+
+    11px
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+
+  text-align:center;
+}
