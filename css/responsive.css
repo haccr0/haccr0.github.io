@@ -28,15 +28,19 @@
 
     display:flex;
 
-    gap:2px;
+    gap:6px;
+
+    flex-wrap:wrap;
   }
 
 
   .navlinks button{
 
-    padding:7px 6px;
+    padding:10px 12px;
 
-    font-size:11px;
+    font-size:15px;
+
+    min-height:42px;
   }
 
 

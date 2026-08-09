@@ -421,7 +421,7 @@
 
   padding:4px 0;
 
-  caret-color:transparent;
+  caret-color:auto;
 }
 
 
@@ -431,25 +431,6 @@
 }
 
 
-.cursor{
-
-  display:inline-block;
-
-  width:7px;
-
-  height:15px;
-
-  background:var(--green);
-
-  vertical-align:-2px;
-
-  box-shadow:
-
-    0 0 8px rgba(53,208,127,.22);
-
-  animation:
-    blink 1s steps(1) infinite;
-}
 
 
 .help{

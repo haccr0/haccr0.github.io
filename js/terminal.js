@@ -249,7 +249,7 @@ function openOutput(html){
     "show"
   );
 
-  input.focus();
+  input.blur();
 
 }
 
@@ -329,10 +329,23 @@ function runCommand(raw){
   if(
     command === "about" ||
     command === "profiles" ||
-    command === "connect"
+    command === "connect" ||
+    command === "projects" ||
+    command === "skills" ||
+    command === "resume" ||
+    command === "github"
   ){
 
     openModal(command);
+
+    return;
+
+  }
+
+
+  if(command === "visitors"){
+
+    showVisitors();
 
     return;
 
