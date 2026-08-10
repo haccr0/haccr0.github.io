@@ -371,8 +371,6 @@ const commands = {
 
       <b>connect</b> — get in touch<br>\n\n      <b>projects</b> — view projects<br>\n\n      <b>skills</b> — view skills<br>
 
-      <b>github</b> — GitHub activity<br>
-
       <b>resume</b> — open resume<br>
 
       <b>clear</b> — clear output<br>
@@ -423,7 +421,7 @@ const commands = {
 
           <div>
             <small>CURRENTLY</small>
-            <strong>Bachekor in AI</strong>
+            <strong>Bachelor in AI</strong>
           </div>
 
           <div>
