@@ -314,10 +314,6 @@ I’m Shon Santhosh, a Computer Science student passionate about coding, artific
         Open Resume ↗
       </a>
 
-      // <p class="resume-note">
-      //   Add your PDF as <code>assets/resume.pdf</code> when ready.
-      // </p>
-
     `
   },
 
@@ -427,7 +423,7 @@ const commands = {
 
           <div>
             <small>CURRENTLY</small>
-            <strong>Computer Science Student</strong>
+            <strong>Bachekor in AI</strong>
           </div>
 
           <div>
