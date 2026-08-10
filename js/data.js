@@ -34,8 +34,6 @@ const data = {
       <p>
 
 I’m Shon Santhosh, a Computer Science student passionate about coding, artificial intelligence, and building things that solve real problems. I’m currently strengthening my programming foundations while exploring AI, automation, and intelligent systems. I enjoy learning by creating projects, experimenting with new technologies, and constantly pushing myself to become a better developer.
-
-If you want it to feel more unique and less like a typical student portfolio, I can also make it more bold/creative.
       </p>
 
       <div class="data-grid">
@@ -316,9 +314,9 @@ If you want it to feel more unique and less like a typical student portfolio, I 
         Open Resume ↗
       </a>
 
-      <p class="resume-note">
-        Add your PDF as <code>assets/resume.pdf</code> when ready.
-      </p>
+      // <p class="resume-note">
+      //   Add your PDF as <code>assets/resume.pdf</code> when ready.
+      // </p>
 
     `
   },
