@@ -21,7 +21,7 @@ const data = {
       <div class="about-photo">
 
         <img
-          src="https://avatars.githubusercontent.com/u/296903246?v=4"
+          src="../assets/profile.jpg"
           alt="Shon Santhosh"
         >
 
@@ -81,7 +81,7 @@ I’m Shon Santhosh, a Computer Science student passionate about coding, artific
       <div class="profile-list">
 
         <a
-          href="https://github.com/haccr0"
+          href="https://github.com/zermello"
           target="_blank"
           rel="noopener"
         >
@@ -389,7 +389,7 @@ const commands = {
       <div class="whoami-photo">
 
         <img
-          src="https://avatars.githubusercontent.com/u/296903246?v=4"
+          src="../assets/profile.jpg"
           alt="Shon Santhosh"
         >
 
